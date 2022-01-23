@@ -1,0 +1,45 @@
+.App {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.guesses {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+
+  .guess {
+    column-gap: 0.5rem;
+    display: flex;
+
+    &--letter {
+      background: #282c34;
+      border: 1px solid grey;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      height: 3rem;
+      outline: none;
+      padding: 0.5rem;
+      text-align: center;
+      width: 3rem;
+
+      &__green {
+        background: rgb(83, 141, 78);
+      }
+
+      &__grey {
+        background: grey;
+      }
+
+      &__yellow {
+        background: rgb(181, 159, 59);
+      }
+    }
+  }
+}
